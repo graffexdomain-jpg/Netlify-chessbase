@@ -1,4 +1,0 @@
-function expand_timeline() {
-    jQuery('.hidden-timeline').slideDown(700);
-    jQuery('#more-timeline').fadeOut(500);
-}
