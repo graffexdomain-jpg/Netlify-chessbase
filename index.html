@@ -1,276 +1,550 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- saved from url=(0031)https://#/chess/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://#/play-chess/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="chess, play, multiplayer, online, game, free, free chess games, blitz chess" name="keywords">
-<meta content="Free Online Chess Game" name="description">
-<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.#/chess/">
-<link rel="stylesheet" type="text/css" href="./index_files/play-free-games-1-07.css">
-<link rel="shortcut icon" href="https://#/games/images/icon/chess.ico">
-<title>Free Chess Game - Play Chess Online</title>
-<!--[if lt IE 7]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js">IE7_PNG_SUFFIX=/^[^$]*\.png/i;</script>
-<![endif]-->
-<!--[if lt IE 8]>
-<style>body{overflow-y:visible;}</style>
-<![endif]-->
-<script src="./index_files/osd.js.Без названия"></script><script src="./index_files/sdk.js.Без названия" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./index_files/gpt.js.Без названия" charset="UTF-8" id="atmp"></script><script type="text/javascript" async="" src="./index_files/sdk.js(1).Без названия" charset="UTF-8"></script><script type="text/javascript" async="" src="./index_files/online-games.pl.Без названия" charset="UTF-8"></script><script type="text/javascript" async="" src="./index_files/SEU-" charset="UTF-8" id="SEU"></script><script type="text/javascript" async="" src="./index_files/f.txt" charset="UTF-8"></script><script type="text/javascript" async="" src="./index_files/clearboxe.js.Без названия" charset="UTF-8"></script><script type="text/javascript" async="" src="./index_files/tournamentwinnerstop10Chessy1.js.Без названия" charset="UTF-8" id="ltltwrnd"></script><script type="text/javascript" async="" src="./index_files/Chess.js.Без названия" charset="UTF-8" id="ltltlrnd"></script><script type="text/javascript" async="" src="./index_files/analytics.js.Без названия" charset="UTF-8"></script><script type="text/javascript" async="" src="./index_files/CC--" charset="UTF-8" id="CC"></script><script type="text/javascript">
-FOD_LANG='en';
-FOD_GAME='Chess';
-FOD_MOBI='chess/';
-function openGame(g) { window.open((this.FOD_GAMES||"http://#/"+"games/"+"online/games.html")+"?lang=en&game="+(g||this.FOD_GAME)+"&rs=1", "_blank", "width=800,height=600,toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,copyhistory=0"); }
-function playerInfo(uid,r,n) { return (r&&!Math.abs(r)?r:'player.html')+"#user="+uid+(Math.abs(r)?"&room="+r:''); }
-var asd=[],asjs,lsi,na,ot=-2;function las(){if(!this.skip&&!this.subframe)loadScript("//pagea"+"d2.goo"+"glesynd"+"ication"+".com/pag"+"ea"+"d/js/a"+"dsbygo"+"ogle."+"js",'asx',las0);}function las0(){if(!window.adsbygoogle)return;while(asd.length)das0(asd.pop());}function das0(s){s=s.split(',');var id=s[1],w=parseInt(s[2],10),h=parseInt(s[3],10),z=s[4].split('/'),a=z[0],i,t;for(i=1;i<z.length;i++){t=z[i].split(':');if(ot<parseInt(t[0]))break;a=t[1];}if(!a){nas(id);return;}document.getElementById(id).innerHTML='<ins id="'+id+'i" class="a'+'dsbygo'+'ogle" style="display:inline-block;'+
-(w?'width:'+w+'px;':'')+(h?'height:'+h+'px':'')+'" data-a'+'d-client="ca-pub-4436814515234129" data-a'+'d-slot="'+a+'"></ins>';nas(id,1);adsbygoogle.push({});}function nas(s,f){s=document.getElementById('d'+s);if(s)if(!f)s.style.display='none';else if(s.style.display=='none')s.style.display='initial';}function gc(n){var s=document.cookie,i=s.indexOf(n+'=');if(i>=0){s=s.substring(i+n.length+1);i=s.indexOf(';');if(i>=0)s=s.substring(0,i);return s;}return'';}function defot(){var u;if(u=gc('_ga')){u=u.split('.');
-u=parseFloat(u[u.length-1]);if(u&&Date.now()/1000-u>=1800)return 0;}else if(u=gc('__utma')){u=u.split('.');u=parseInt(u[u.length-1],10);if(u>1)return 0;}return-2;}function das(s){if(!lsi){lsi=1;var ls;try{ls=window.localStorage;}catch(err){}if(ls){na=ls.getItem('na');ot=ls.getItem('ot');}na=(na?na=='1':gc('noAdv')=='true')?1:0;ot=ot?parseInt(ot,10):defot();}if(s.indexOf('/-')>0){var id=s.split(',')[1];if(na)return nas(id);nas(id,1);s=s.substring(0,s.length-2);}if(asd)asd.push(s);}function ras(d,r){
-d=document.getElementById('d'+d);if(d){r=r.split('/');var t=Math.floor(Math.random()*100);for(var i=0;i<r.length;i++){if((t-=parseInt(r[i],10))<=0)break;var e=d;do{if(!(e=e.nextSibling))return;}while(e.nodeType!=1);d.parentNode.insertBefore(e,d);}}}
-var fab=(function(){var r=0;try{var ls=window.localStorage;r=ls.getItem('fab')|0;if(r==0)ls.setItem('fab',r=(1+Math.random()*100)|0);}catch(e){}return r;})();function dabs(s,b,w,h){if(fab>20&&fab%50<30){s=s.split(',');s[4]=b;if(w)s[2]=w;if(h)s[3]=h;s=s.join(',');}das(s);}
-function r90(h,c,b,r) {
-	var msie=navigator.userAgent.indexOf("MSIE")>=0&&!window.opera,rtl=0^r,f=h/2-6;
-	document.write(
-		'<div style="position: absolute; text-align:center; overflow:hidden; font-size: 8px; '+(b?'background-color:#'+b:'')+'; color:#'+(c||'b0b0b0')+'; padding:0; '+
-			(msie
-				?(rtl?"left":"right")+":0px; top:0px; height:"+h+"px; width:12px; writing-mode:tb-rl;"
-				:(rtl?"left":"right")+":-"+f+"px; top:"+f+"px; width:"+h+"px; height:12px; -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);"
-			)
-			+"\">ADVERTISEMENT</div>"
-	);
+				
+				<meta name="generator" content="WordPress 5.4.4">
+				<meta name="format-detection" content="telephone=no">
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+				<link rel="pingback" href="https://#/new/xmlrpc.php">
+				<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://#/feed/">
+				<link rel="shortcut icon" href="https://#/new/wp-content/uploads/2016/06/favicon.ico">
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Play Chess Online, Learn Chess &amp; Practice Online | Kid Chess ®</title>
+	<meta name="description" content="Chess Online. Play chess games. Lessons, quizzes, puzzles &amp; practice. Learn new chess strategies. All Online. Chess develops analytical, synthetic &amp; decision-making skills.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://#/play-chess/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Play Chess Online, Learn Chess &amp; Practice Online | Kid Chess ®">
+	<meta property="og:description" content="Chess Online. Play chess games. Lessons, quizzes, puzzles &amp; practice. Learn new chess strategies. All Online. Chess develops analytical, synthetic &amp; decision-making skills.">
+	<meta property="og:url" content="https://#/play-chess/">
+	<meta property="og:site_name" content="Kid Chess® Atlanta, Chess for Kids">
+	<meta property="article:publisher" content="https://www.facebook.com/KidChess/">
+	<meta property="article:modified_time" content="2020-09-11T18:47:31+00:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@kidchess">
+	<meta name="twitter:site" content="@kidchess">
+	<script src="./index_files/182787345398990" async=""></script><script async="" src="./index_files/fbevents.js.Без названия"></script><script async="" src="./index_files/analytics.js.Без названия"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://#/#organization","name":"Kid Chess","url":"https://#/","sameAs":["https://www.facebook.com/KidChess/","https://www.instagram.com/kidchess/","https://www.linkedin.com/company/kid-chess/","https://www.pinterest.com/source/kidchess.com/","https://twitter.com/kidchess"],"logo":{"@type":"ImageObject","@id":"https://#/#logo","inLanguage":"en-US","url":"https://#/new/wp-content/uploads/2019/01/LogoNoName.png","width":160,"height":180,"caption":"Kid Chess"},"image":{"@id":"https://#/#logo"}},{"@type":"WebSite","@id":"https://#/#website","url":"https://#/","name":"Kid Chess\u00ae Atlanta, Chess for Kids","description":"Chess Makes You Smart - We Make It Fun!","publisher":{"@id":"https://#/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://#/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://#/play-chess/#webpage","url":"https://#/play-chess/","name":"Play Chess Online, Learn Chess & Practice Online | Kid Chess \u00ae","isPartOf":{"@id":"https://#/#website"},"datePublished":"2016-06-09T21:26:32+00:00","dateModified":"2020-09-11T18:47:31+00:00","description":"Chess Online. Play chess games. Lessons, quizzes, puzzles & practice. Learn new chess strategies. All Online. Chess develops analytical, synthetic & decision-making skills.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://#/play-chess/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type="text/javascript">console.log('PixelYourSite Free version 7.2.0');</script>
+<link rel="dns-prefetch" href="https://maps.google.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Kid Chess® Atlanta, Chess for Kids » Feed" href="https://#/feed/">
+<link rel="alternate" type="application/rss+xml" title="Kid Chess® Atlanta, Chess for Kids » Comments Feed" href="https://#/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/#\/new\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.4"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./index_files/wp-emoji-release.min.js.Без названия" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-MV= 'Mobile Version';
-LALT=[[]
-,['ar',"العربيّة",'../ar/chess/']
-,['bg',"Български",'../bg/sahmat/']
-,['cs',"Čeština",'../hry/sachy/']
-,['da',"Dansk",'../spil/skak/']
-,['de',"Deutsch",'http://www.startspiele.de/schach/']
-,['en',"English",'./']
-,['es',"Español",'../juegos/ajedrez.html']
-,['et',"Eesti keel",'../mangud/male/']
-,['fi',"Suomi",'../pelit/shakki/']
-,['fr',"Français",'../jeu/echecs.html']
-,['hr',"Hrvatski",'../igre/sah/']
-,['hu',"Magyar",'http://www.sakk.hu/']
-,['id',"Indonesia",'../permainan/catur/']
-,['it',"Italiano",'../giochi/scacchi/']
-,['ka',"ქართული",'../ka/chess/']
-,['lt',"Lietuviškai",'../zaidimai/sachmatai/']
-,['lv',"Latviešu",'../speles/sahs/']
-,['nl',"Nederlands",'../spel/schaken/']
-,['no',"Norsk",'../spill/sjakk/']
-,['pl',"Polski",'http://www.flyordie.pl/szachy/']
-,['pt',"Português",'../jogo/xadrez.html']
-,['ro',"Română",'../jocuri/sah/']
-,['ru',"Русский",'../ru/chess/']
-,['sk',"Slovensky",'../sk/sach/']
-,['sq',"Shqip",'../lojera/shah/']
-,['sr',"Српски",'../sr/chess/']
-,['sv',"Svenska",'../spela/schack/']
-,['tr',"Türkçe",'../oyun/satranc/']
-,['uk',"Українська",'../ua/sahi/']
-,['zh_CN',"汉语",'../zh_cn/chess/']
-,['zh_TW',"繁體中文",'../zh_tw/chess/']
-];
-function init() {
-if(!this.free_online_games) return;
-if(asd.length) { asd.sort().reverse(); las(); }
-loadToplistRnd("tlrnd", [
-['',"Rating",'',"Top Rated Players"]
-,['avg',"Average rating of opponents",'',"Avg opponent rating"]
-,['cnt',"Count of matches",'',"Matches played"]
-,['ltr',"Tournament rating",'',"Last tournament result"]
-,['pct',"Percentage of wins",'',"Win percentage"]
-],0,0);
-loadToplistRnd("twrnd", [
-['',"overall"],
-['y1',"last 12 months"],
-['y2',"last 24 months"],
-['y3',"last 36 months"]
-], '','player-bullet.html', 0, true);
-loadClearBox();
-loadScript("//cse.google.com/coop/cse/brand?form=cse-search-box&lang="+FOD_LANG);
-loadFB('en_US', "FlyOrDie.Chess","");
-isEU=1;
-euccCheck(1);
-}
+</style>
+	<link rel="stylesheet" id="vp2_html5_bottom_site_css-group-css" href="./index_files/saved_resource" type="text/css" media="all">
+<link rel="stylesheet" id="pb-component-background-video-group-css" href="./index_files/saved_resource(1)" type="text/css" media="all">
+<link rel="stylesheet" id="pb-component-dropcap-group-css" href="./index_files/saved_resource(2)" type="text/css" media="all">
+<link rel="stylesheet" id="pb-component-menu-group-css" href="./index_files/saved_resource(3)" type="text/css" media="all">
+<link rel="stylesheet" id="pb-component-social-icon-group-css" href="./index_files/saved_resource(4)" type="text/css" media="all">
+<link rel="stylesheet" id="pb-component-zaccordion-group-css" href="./index_files/saved_resource(5)" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel="stylesheet" id="timetable_font_lato-css" href="./index_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-timetable-group-css" href="./index_files/saved_resource(6)" type="text/css" media="all">
+<link rel="stylesheet" id="google-font-open-sans-css" href="./index_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="google-font-lato-css" href="./index_files/css(2)" type="text/css" media="all">
+<script type="text/javascript" src="./index_files/jquery.js.Без названия"></script>
+<script type="text/javascript" src="./index_files/jquery-migrate.min.js.Без названия"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pysOptions = {"staticEvents":{"facebook":{"PageView":[{"params":[],"delay":0,"ids":[],"eventID":""}]}},"dynamicEventsParams":[],"dynamicEventsTriggers":[],"facebook":{"pixelIds":["182787345398990"],"advancedMatching":[],"removeMetadata":false,"contentParams":{"post_type":"page","post_id":2217,"content_name":"Let's Play Some Chess"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"ajaxForServerEvent":true,"serverApiEnabled":false,"wooCRSendFromServer":false},"debug":"","siteUrl":"https:\/\/#\/new","ajaxUrl":"https:\/\/#\/new\/wp-admin\/admin-ajax.php","commonEventParams":{"domain":"#","user_roles":"guest","plugin":"PixelYourSite"},"commentEventEnabled":"1","downloadEventEnabled":"1","downloadExtensions":["doc","exe","js","pdf","ppt","tgz","zip","xls"],"formEventEnabled":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":false,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","ginger_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"woo":{"enabled":false,"addToCartOnButtonEnabled":false,"addToCartOnButtonValueEnabled":false,"addToCartOnButtonValueOption":"price","removeFromCartEnabled":true,"removeFromCartSelector":".cart .product-remove .remove"},"edd":{"enabled":false,"addToCartOnButtonEnabled":false,"addToCartOnButtonValueEnabled":false,"addToCartOnButtonValueOption":"price","removeFromCartEnabled":true}};
+/* ]]> */
 </script>
-<script src="./index_files/free-online-games-1-07.jhtm" defer="defer" async="async" charset="UTF-8"></script>
-<style type="text/css">#CB_LoadingImage,.CB_TextNav,#CB_ShowTh,#CB_Thumbs2,#CB_Thumbs,.CB_RoundPixBugFix,#CB_Padding,#CB_ImgContainer,#CB_PrevNext,#CB_ContentHide,#CB_Text,#CB_Window,#CB_Image,#CB_TopLeft,#CB_Top,#CB_TopRight,#CB_Left,#CB_Content,#CB_Right,#CB_BtmLeft,#CB_Btm,#CB_BtmRight,#CB_Prev,#CB_Prev:hover,#CB_Prev:focus,#CB_Prev:active,#CB_Next,#CB_Next:hover,#CB_Next:focus,#CB_Next:active,#CB_CloseWindow,#CB_SlideShowS,#CB_SlideShowP,#CB_SlideShowBar{margin:0;padding:0;background-color:transparent;border:0;outline-style:none;outline:0}#CB_Text,#CB_Text *,#CB_HiddenTextT,#CB_HiddenTextT *,#CB_HiddenTextC,#CB_HiddenTextC *,#CB_HiddenTextG,#CB_HiddenTextG *,#CB_OSD{line-height:normal;letter-spacing:0}#CB_LoadingImage{position:absolute;left:-10000px;top:-10000px;margin-left:-16px;margin-top:-16px;visibility:hidden;z-index:1101}.CB_Absolute{position:absolute}#CB_NotImgContent{position:absolute;width:0;height:0}#CB_NotIC,#CB_NotImgContent{border:0;outline-style:none;outline:0}#CB_Window{position:fixed;left:50%;top:50%;width:0;border-spacing:0;border-width:0;border-collapse:separate;visibility:hidden;z-index:1100;background-color:#ffffff;border-radius:8px;-moz-border-radius:8px;}.CB_Sep{color:#bbb}.CB_TnThumbs{width:0;height:0;border:0;padding:0;margin:0;visibility:hidden}.CB_BtmNav{vertical-align:middle;border:0;margin-left:3px}#CB_ImgHide{position:absolute;visibility:hidden;z-index:1098;left:0}#CB_ShowTh{width:100%;height:20%;visibility:hidden;position:absolute;z-index:1097;bottom:0;left:0}#CB_Thumbs{display:none;height:62px;padding-top:10px;position:absolute;z-index:1100;overflow:hidden;bottom:0;left:0}#CB_Thumbs2{margin:auto 0;height:52px;position:absolute}.CB_ThumbsImg{position:absolute;cursor:pointer;border:1px solid #eee}#CB_ThumbsActImg{cursor:default;border:1px dotted #fff}.CB_RoundPixBugFix{display:block;visibility:hidden;font-family:arial;font-size:1pt}#CB_ImgContainer{position:relative;width:100%}#CB_PrevNext{position:absolute;width:100%;height:100%;top:0;left:0;z-index:1002}#CB_NavPrev,#CB_NavNext{visibility:hidden;position:absolute;z-index:1001;top:47%;cursor:pointer;display:block;width:43px;height:43px;background:url(https://#/pub/clearbox/pic/$ctls.png) no-repeat;}#CB_NavPrev{left:18px;background-position:0% 0%;}#CB_NavNext{right:14px;background-position:0% 100%;}#CB_ContentHide{position:absolute;z-index:1000;top:0;left:0}#CB_OSD{position:fixed;left:50%;z-index:5000;font-size:22px;color:#fff;background-color:#000;visibility:hidden}#CB_Image{position:relative}#CB_Prev,#CB_Next{display:block;width:49%;cursor:pointer;z-index:1102}.CB_TextNav{text-decoration:underline;padding-right:5px;color:#999;cursor:pointer;border:0}.CB_TextNav:hover{text-decoration:underline;color:#555;border:0}#CB_Prev{float:left;left:0}#CB_Next{float:right;left:0}#CB_Prev:hover{background:transparent}#CB_Next:hover{background:transparent}#CB_BtmNavP,#CB_BtmNavN,#CB_BtmNavF{display:inline-block;vertical-align:middle;margin-left:3px;width:16px;height:16px;background:url(https://#/pub/clearbox/pic/$ctls.png) no-repeat;}#CB_BtmNavP{background-position:0px 50%}#CB_BtmNavN{background-position:-16px 50%}#CB_BtmNavF{background-position:-32px 50%}#CB_CloseWindow{position:absolute;z-index:1104;cursor:pointer;display:block;width:32px;height:32px;background:url(https://#/pub/clearbox/pic/$ctls.png) no-repeat 100% 0%;}#CB_SlideShowS,#CB_SlideShowP{position:absolute;left:-11px;top:-10px;z-index:1104;cursor:pointer;display:block;width:32px;height:32px;background:url(https://#/pub/clearbox/pic/$ctls.png) no-repeat;}#CB_SlideShowS{background-position:100% 50%}#CB_SlideShowP{background-position:100% 100%}#CB_SlideShowBar{width:0;position:fixed;height:2px;display:none;z-index:1102}#CB_Text{position:relative;text-align:left;overflow:hidden}#CB_TT,#CB_TC{position:relative}#CB_TT,#CB_HiddenTextT{white-space:nowrap}#CB_TC{overflow-y:auto}#CB_HiddenTextT,#CB_HiddenTextC,#CB_HiddenTextG{position:absolute;visibility:hidden;z-index:-1000;top:-100000px;left:-100000px}.CB_PreloadBugFix{width:0;height:0;z-index:-1000;visibility:hidden;position:absolute}#CB_Debug,#CB_Debug a,.dbg_1,.dbg_2,.dbg_2a,.dbg_3,.dbg_3a,.dbg_4,.dbg_5{border:0;margin:0;padding:0;background:none transparent;letter-spacing:0;line-height:normal;font-size:11px;font-weight:normal;font-style:none}#CB_Debug{display:none;background:#000 none;width:280px;padding:10px;z-index:5000;position:absolute;right:0;top:0}.dbg_1{color:#fff;padding-top:10px;font-weight:bold}.dbg_2,.dbg_2a{color:#999;padding:10px 0 0 20px}.dbg_2a{color:#f80}.dbg_3{color:#fff;padding-top:10px;font-weight:bold}.dbg_4{color:#fff;font-weight:bold}.dbg_5{color:#fff;margin:15px 0 5px 0;border-bottom:5px dotted #ccc;font-weight:bold}#CB_Debug a{color:#999;text-decoration:none;border-bottom:1px dotted #999}#CB_Debug .dbg_2a a{color:#f80;border-bottom:1px dotted #f80}#CB_Debug a:hover,#CB_Debug .dbg_2a a:hover{color:#fff;border-bottom:1px dotted #fff}#CB_OutNavContainer{display:none;z-index:5000;width:100%;position:fixed;padding-bottom:20px;bottom:0}#CB_OutNavG{text-align:center;padding-bottom:10px}#CB_OutNavB,#CB_OutNavBG{width:180px;height:50px}#CB_OutNavB{position:relative;margin:0 auto;overflow:hidden}#CB_OutNavBG{position:absolute;left:50%;margin-left:-90px;bottom:20px;}#CB_OutNavB a{cursor:pointer}#CB_OutNavB a img{position:relative}#CB_OutNavB a:hover img{top:-50px}</style><script src="./index_files/pubads_impl_2020111801.js.Без названия" async=""></script><link rel="preload" href="./index_files/f(1).txt" as="script"><script type="text/javascript" src="./index_files/f(1).txt"></script><link rel="prefetch" href="https://5dc1561d60bf7661c77bac8fed5b68de.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html"><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
-<body onload="init()" style="position: static;">
-<div id="sheet"><div id="shl"></div><div id="shr"></div>
-<div id="header">
-<div id="title"><h1>Free Chess Game</h1></div>
-<div id="path">
-<a href="https://#/">All games</a> » 
-<a href="https://#/board-games/">Board Games</a> » 
-Chess
-</div>
-<div id="pc">
-<a href="http://forum.#/">Forum</a> | 
-<a href="https://#/subscribe.html">Subscribe</a> | 
-<a href="https://#/games/help/support/contents.html" target="_blank" title="Frequently Asked Questions">Faq</a>
-</div>
-<a id="logo" href="https://#/"></a>
-</div>
-<div id="warnbar" style="display: none;">Your device is not supported. Please use a PC/Mac (desktop/laptop/notebook) computer to play these games.</div>
-<div id="content">
-<div id="left">
-<div id="instructions" style="background:rgb(255, 184, 0);"><p style="margin:10px; text-align:center; font-size:120%; font-weight:bold;">Play this game on your mobile phone!</p>
-<p style="text-align:center; width:100%; margin-bottom:20px; margin-top:10px; font-size:14px;">No apps required. Simply visit <a href="http://m.#/">m.#</a> on your phone's browser, and you're good to go!</p>
-<img src="./index_files/qrcode.jpg">
-</div>
-<div id="instructions"><p style="margin:10px; text-align:justify;">Come and test your skills in FlyOrDie's free Chess Game. Play online with other chess fans. Whether you're looking for a social free chess game or a competitive rated game, there are always couple of players to choose from.</p>
-<p style="text-align:center; width:100%; margin-bottom:20px; margin-top:10px; font-size:14px;"><a href="https://#/games/help/chess/en/contents.html" target="blankTop" onclick="fodBlank(530,500,this)">Game description » </a></p> 
-<form action="https://www.google.com/" id="cse-search-box" target="_blank"><p style="white-space: nowrap;">
-<span style="color:#515e42">Search for more help:</span><br>
-<input type="hidden" name="cx" value="partner-pub-4436814515234129:5442105793">
-<input type="hidden" name="ie" value="UTF-8">
-<input type="text" name="q" size="30" style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;" placeholder="Custom Search"><input type="submit" name="sa" value="►" style="width:13%; border: 1px solid #7e9db9; background-color: #e9f4eb; color: #106ba8; padding: 1px; border-radius: 3px;"></p><input name="siteurl" type="hidden" value="#/chess/"><input name="ref" type="hidden" value="www.google.com/"><input name="ss" type="hidden" value=""></form>
-</div>
-<div id="instructions">
-<p style="text-align:center; width:100%; font-size:14px; font-weight:bold;">Game features</p>
-<ul> 
-<li>Play online against others </li> 
-<li>Meet your friends and chat</li> 
-<li>Customizable game settings</li> 
-<li>Ratings and statistics </li> 
-<li>Tournaments</li> 
-<li>Play in full screen</li> 
-<li>Save and analyze your games</li> 
-</ul>
-<p style="text-align:center; width:100%; margin-bottom:20px; margin-top:10px; font-size:14px; font-weight: bold;"><a href="http://games.#/registration/registerSite.html?portal=flyordie_com&amp;lang=en&amp;game=Chess" rel="clearbox[,,width=500,,height=400]">Sign up now »</a></p>
-</div>
-<div id="gamevariants"><div class="gamevarianth">Chess Variants</div>
-<div class="gamevariantbox">
-<a class="gamevariantimg" href="javascript:openGame(&#39;ChessInformant&#39;)" title="Play Informant Chess Now!"><img src="./index_files/chessinf100.gif"></a>
-<div class="gamevariant"><div class="gamevariantname">Informant Chess</div>
-<a href="javascript:openGame(&#39;ChessInformant&#39;)">Play Now!</a>
-<p class="gamevariantpc"><span style="visibility: visible;" name="pcp"> (176 players)</span></p>
-</div>
-<div style="clear: both">You can promote your pawn in the 7th row.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://#/chess/informant-chess.html" target="_blank" onclick="fodBlank(-500,-560,this)">More about »</a></div>
-</div>
-</div>
-<div id="gamevariants"><div class="gamevariantbox" style="height:80px;"><b>Frequently Asked Questions</b><br><br>
-<script type="text/javascript" language="javascript">var faq=[];
-faq.push("<a href='faq.html#topic=rating'>How does the rating system work?</a>");
-faq.push("<a href='faq.html#topic=abuse'>How can I report abuse?</a>");
-faq.push("<a href='faq.html#topic=ratingprovisional'>What does ≈ mean in front of the rating?</a>");
-faq.push("<a href='faq.html#topic=tournament'>How can I enter tournaments?</a>");
-faq.push("<a href='faq.html#topic=ads'>How can I disable ads?</a>");
-faq.push("<a href='faq.html#topic=ads'>The ads are disturbing. Can I remove them?</a>");
-faq.push("<a href='faq.html#topic=java'>What do I need to install to play this game?</a>");
-faq.push("<a href='faq.html#topic=rating'>How are ratings calculated?</a>");
-faq.push("<a href='faq.html#topic=fullscreen'>How to switch to full screen?</a>");
-faq.push("<a href='faq.html#topic=subscribe'>What are the benefits of subscribing?</a>");
-faq.push("<a href='faq.html#topic=informant'>What is Chess <i>Informant</i>?</a>");
-faq.push("<a href='faq.html#topic=informant'>Pawn got promoted in the penultimate row. Why is this?</a>");
-faq.push("<a href='faq.html#topic=pgn'>How can I save my games?</a>");
-faq.push("<a href='faq.html#topic=design'>Can I change the default graphics?</a>");
-document.write(faq[Math.floor(Math.random()*faq.length)]);
-</script><a href="https://#/chess/faq.html#topic=ratingprovisional">What does ≈ mean in front of the rating?</a>
+<script type="text/javascript" src="./index_files/saved_resource(7)"></script>
+<link rel="https://api.w.org/" href="https://#/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://#/new/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://#/new/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.4.4">
+<link rel="shortlink" href="https://#/?p=2217">
+<link rel="alternate" type="application/json+oembed" href="https://#/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Fplay-chess%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://#/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Fplay-chess%2F&amp;format=xml">
 
-<div style="position:absolute; bottom:4px; right:4px; font-size:10px;"><a href="https://#/chess/faq.html">Complete FAQ »</a></div>
-</div></div>
-<div id="gamevariants"><div class="gamevarianth">Chess puzzles</div>
-<div class="gamevariantbox"><a href="https://#/chess/eightqueens/">Eight Queens</a></div>
-<div class="gamevariantbox"><a href="https://#/chess/knightstour/">Knight's Tour</a></div>
-<div class="gamevariantbox"><a href="https://#/chess/threekings/">Three Kings</a></div>
-<div class="gamevariantbox"><a href="https://#/chess/quiz/">Chess Quiz</a></div>
-</div>
-<div id="facebook" style="height:270px;"><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><div class="fb-like-box fb_iframe_widget" data-show-faces="true" data-stream="false" data-header="false" data-width="260" data-height="270" data-href="http://www.facebook.com/FlyOrDie.Chess" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=114085351981609&amp;container_width=260&amp;header=false&amp;height=270&amp;href=http%3A%2F%2Fwww.facebook.com%2FFlyOrDie.Chess&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=260"><span style="vertical-align: bottom; width: 260px; height: 130px;"><iframe name="f957218011ca1c" width="260px" height="270px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./index_files/like_box.html" style="border: none; visibility: visible; width: 260px; height: 130px;" class=""></iframe></span></div></div>
-</div>
-<div id="right">
-<div style="text-align:center; margin: 0 auto 10px; color:#b0b0b0; font-size: 8px;">ADVERTISEMENT
-<div id="asf" style="width:250px; height:250px; margin: auto auto;" data-google-query-id="CJuIieSTjO0CFcz5dwodo1MAlQ"><div id="google_ads_iframe_/16315490/GPR_250x250_MAN_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/16315490/GPR_250x250_MAN_0" title="3rd party ad content" name="google_ads_iframe_/16315490/GPR_250x250_MAN_0" width="250" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="border: 0px; vertical-align: bottom;" data-google-container-id="2" data-load-complete="true" src="./index_files/saved_resource(2).html"></iframe></div></div></div>
-<div id="toplist" class="toplists"><div id="tlrnd" class="toplist" style="visibility: visible;"><table class="tltable"><tbody><tr><th colspan="5" class="tlh">Top Rated Players</th></tr><tr class="tlr"><td class="tld tldi">1</td><td class="tld tldc"></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/671738.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="tropkalia" target="_blank" href="https://#/chess/player.html#user=30418461">tropkalia</a></td><td class="tld tldr" title="Rating">762</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">2</td><td class="tld tldc"></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/582983.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="MASTER-1" target="_blank" href="https://#/chess/player.html#user=29818491">MASTER-1</a></td><td class="tld tldr" title="Rating">683</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">3</td><td class="tld tldc"><span style="display:inline-block;width:18px;height:12px;vertical-align:text-top;background:url(//#/servletImages/flags/$top50.png) no-repeat 0% -564px" title="US"></span></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/671230.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Secretariat." target="_blank" href="https://#/chess/player.html#user=30507649">Secretariat.</a></td><td class="tld tldr" title="Rating">636</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">4</td><td class="tld tldc"><span style="display:inline-block;width:18px;height:12px;vertical-align:text-top;background:url(//#/servletImages/flags/$top50.png) no-repeat 0% -192px" title="EG"></span></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/675094.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="The scorpion" target="_blank" href="https://#/chess/player.html#user=30459077">The scorpion</a></td><td class="tld tldr" title="Rating">605</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">5</td><td class="tld tldc"></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players]" title="GUIDARELLO" target="_blank" href="https://#/chess/player.html#user=28133038">GUIDARELLO</a></td><td class="tld tldr" title="Rating">594</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">6</td><td class="tld tldc"><span style="display:inline-block;width:18px;height:12px;vertical-align:text-top;background:url(//#/servletImages/flags/$top50.png) no-repeat 0% -264px" title="HU"></span></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/238173.gif&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="meteorhunter" target="_blank" href="https://#/chess/player.html#user=29134132">meteorhunter</a></td><td class="tld tldr" title="Rating">589</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">7</td><td class="tld tldc"><span style="display:inline-block;width:18px;height:12px;vertical-align:text-top;background:url(//#/servletImages/flags/$top50.png) no-repeat 0% -120px" title="CL"></span></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/627741.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="𝐜𝐨𝐛𝐫𝐚 𝐤𝐚i" target="_blank" href="https://#/chess/player.html#user=30491459">𝐜𝐨𝐛𝐫𝐚 𝐤𝐚i</a></td><td class="tld tldr" title="Rating">588</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">8</td><td class="tld tldc"><span style="display:inline-block;width:18px;height:12px;vertical-align:text-top;background:url(//#/servletImages/flags/$top50.png) no-repeat 0% -396px" title="PE"></span></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players];screenshot[img=&#39;//#/s/player-image/659818.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Rojo-Pєʀú" target="_blank" href="https://#/chess/player.html#user=27544173">Rojo-Pєʀú</a></td><td class="tld tldr" title="Rating">584</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">9</td><td class="tld tldc"></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players]" title="onlywind" target="_blank" href="https://#/chess/player.html#user=19574801">onlywind</a></td><td class="tld tldr" title="Rating">560</td><td class="tld tldrc" style="color:green"></td></tr><tr class="tlr"><td class="tld tldi">10</td><td class="tld tldc"></td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Top Rated Players]" title="selau5" target="_blank" href="https://#/chess/player.html#user=30045573">selau5</a></td><td class="tld tldr" title="Rating">557</td><td class="tld tldrc" style="color:green"></td></tr></tbody></table></div>
-<p style="font-weight:bold;">More Toplists</p>
-<map name="toplists">
-<area title="Rapid Chess Toplists" href="https://#/chess/toplist.html" coords="0,0,30,30">
-<area title="Informant Chess Toplists" href="https://#/chess/toplist-informant.html" coords="30,0,60,30">
-<area title="Blitz Chess Toplists" href="https://#/chess/toplist-blitz.html" coords="60,0,90,30">
-<area title="Bullet Chess 2′ Toplists" href="https://#/chess/toplist-bullet2.html" coords="90,0,120,30">
-<area title="Bullet Chess Toplists" href="https://#/chess/toplist-bullet.html" coords="120,0,150,30">
-<area title="Compound Chess Toplist" href="https://#/chess/toplist-all.html" coords="150,0,180,30">
-</map>
-<img src="./index_files/toplist-icons.png" style="margin-bottom: 10px;" usemap="#toplists">
-</div>
-<div id="tourwin" class="toplists">
-<div id="twrnd" class="toplist" style="visibility: visible;"><table class="tltable"><tbody><tr><th colspan="5" class="tlh">Most tournament wins<div class="tlts">last 12 months</div></th></tr><tr class="tlr"><td class="tld tldi">1</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/659818.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Rojo-Pєʀú" target="_blank" href="https://#/chess/player-bullet.html#user=27544173">Rojo-Pєʀú</a></td><td class="tld tldg" title="Count of wins">11</td><td class="tld tlds" title="Count of 2nd places">6</td><td class="tld tldb" title="Count of 3rd places">8</td></tr><tr class="tlr"><td class="tld tldi">2</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/667793.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="ÁRIES BÁCK" target="_blank" href="https://#/chess/player-bullet.html#user=29741501">ÁRIES BÁCK</a></td><td class="tld tldg" title="Count of wins">5</td><td class="tld tlds" title="Count of 2nd places">4</td><td class="tld tldb" title="Count of 3rd places">4</td></tr><tr class="tlr"><td class="tld tldi">3</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/494839.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Kornel88XT" target="_blank" href="https://#/chess/player-bullet.html#user=29784914">Kornel88XT</a></td><td class="tld tldg" title="Count of wins">4</td><td class="tld tlds" title="Count of 2nd places">1</td><td class="tld tldb" title="Count of 3rd places">1</td></tr><tr class="tlr"><td class="tld tldi">4</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/561332.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Gιnebrα" target="_blank" href="https://#/chess/player-bullet.html#user=30086961">Gιnebrα</a></td><td class="tld tldg" title="Count of wins">3</td><td class="tld tlds" title="Count of 2nd places">3</td><td class="tld tldb" title="Count of 3rd places">4</td></tr><tr class="tlr"><td class="tld tldi">5</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/629824.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="SZIGETLAKÓ" target="_blank" href="https://#/chess/player-bullet.html#user=13871859">SZIGETLAKÓ</a></td><td class="tld tldg" title="Count of wins">3</td><td class="tld tlds" title="Count of 2nd places">2</td><td class="tld tldb" title="Count of 3rd places">3</td></tr><tr class="tlr"><td class="tld tldi">6</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/672032.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Ɓang°ɣang" target="_blank" href="https://#/chess/player-bullet.html#user=30025205">Ɓang°ɣang</a></td><td class="tld tldg" title="Count of wins">3</td><td class="tld tlds" title="Count of 2nd places">2</td><td class="tld tldb" title="Count of 3rd places">2</td></tr><tr class="tlr"><td class="tld tldi">7</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/567952.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="ARBEN" target="_blank" href="https://#/chess/player-bullet.html#user=13672920">ARBEN</a></td><td class="tld tldg" title="Count of wins">2</td><td class="tld tlds" title="Count of 2nd places">3</td><td class="tld tld0"></td></tr><tr class="tlr"><td class="tld tldi">8</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/471195.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="Raul Alberto" target="_blank" href="https://#/chess/player-bullet.html#user=17941957">Raul Alberto</a></td><td class="tld tldg" title="Count of wins">2</td><td class="tld tlds" title="Count of 2nd places">2</td><td class="tld tld0"></td></tr><tr class="tlr"><td class="tld tldi">9</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/572923.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="wanny" target="_blank" href="https://#/chess/player-bullet.html#user=30171255">wanny</a></td><td class="tld tldg" title="Count of wins">2</td><td class="tld tlds" title="Count of 2nd places">2</td><td class="tld tld0"></td></tr><tr class="tlr"><td class="tld tldi">10</td><td class="tld tldu"><a rel="clearbox[width=600,,height=600,,gallery=Most tournament wins];screenshot[img=&#39;//#/s/player-image/590449.jpg&#39;]" onmouseover="screenShotAsyncE(this,&#39;pi&#39;)" onmouseout="screenShotAsyncE(null)" title="покерист" target="_blank" href="https://#/chess/player-bullet.html#user=30206962">покерист</a></td><td class="tld tldg" title="Count of wins">2</td><td class="tld tld0"></td><td class="tld tld0"></td></tr></tbody></table></div>
-<p><a target="_blank" rel="clearbox[width=550,,height=550]" href="http://games.#/displayRatings.html?gameName=ChessBullet&amp;portal=flyordie_com&amp;lang=en&amp;type=16">Tournament results »</a></p>
-<p><a href="https://#/chess/tournaments.html">Tournament Calendar »</a></p>
-</div>
-<div id="othergames" class="nobottomalign">
-<table width="100%"><tbody><tr><th colspan="2">Try our other games</th></tr>
-<tr><td class="othergamesname"><a href="http://www.playcurling.com/">Curling »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (99 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/darts/">Darts »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (7 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/backgammon/">Backgammon »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (644 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/checkers/">Checkers »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (711 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/go/">Go »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (90 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/fourinarow/">Four in a Row »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (6 players)</span></td></tr>
-<tr><td class="othergamesname"><a href="https://#/snooker/">Snooker »</a></td><td class="othergamespc"><span style="visibility: visible;" name="pcp"> (211 players)</span></td></tr>
-</tbody></table>
-</div>
-</div>
-<div id="center">
-<h2>Play Chess Online</h2>
-<a href="javascript:openGame()" title="Play Chess Now!"><img src="./index_files/chess.jpg" style="margin:10px 0 15px 0;"></a>
-<button class="playnow-button" onfocus="blur();" type="button" onclick="javascript:openGame()"><span class="playnow-button-span"> </span></button>
-<p id="pctotal" style="margin-top:10px;"><span style="visibility: visible;" id="Chess">1,952 players online</span></p>
-<div id="dascwh" style="padding: 0px 0px 10px; font-size: 14px; color: rgb(0, 0, 0); font-weight: bold;">Trending Videos<div id="ascwh" style="margin-top:8px;"><ins id="ascwhj" style="width: 370px; height: 291px;" data-google-query-id="CLf_h-STjO0CFcz5dwodo1MAlQ"><div id="google_ads_iframe_/16315490/GPC_370x291_0__container__" style="border: 0pt none; display: inline-block; width: 370px; height: 291px;"><iframe frameborder="0" src="./index_files/container.html" id="google_ads_iframe_/16315490/GPC_370x291_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="370" height="291" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></ins></div></div>
-<div class="gamestripe">
-<div class="gamestripetitle">Rapid Chess<div class="gamestripesubtitle">20 Min</div></div>
-<div class="gamestripelink"><a href="javascript:openGame(&#39;Chess&#39;)">Rapid Chess - Play Now!</a></div> <div class="gamestripepc"><span class="ggplayercount" style="visibility: visible;" name="pcp"> (1,129 players)</span></div>
-</div>
-<div class="gamestripe">
-<div class="gamestripetitle">Informant Chess<div class="gamestripesubtitle">10 Min</div></div>
-<div class="gamestripelink"><a href="javascript:openGame(&#39;ChessInformant&#39;)">Informant Chess - Play Now!</a></div> <div class="gamestripepc"><span class="ggplayercount" style="visibility: visible;" name="pcp"> (176 players)</span></div>
-</div>
-<div class="gamestripe">
-<div class="gamestripetitle">Blitz Chess<div class="gamestripesubtitle">5 Min</div></div>
-<div class="gamestripelink"><a href="javascript:openGame(&#39;ChessBlitz&#39;)">Blitz Chess - Play Now!</a></div> <div class="gamestripepc"><span class="ggplayercount" style="visibility: visible;" name="pcp"> (338 players)</span></div>
-</div>
-<div class="gamestripe">
-<div class="gamestripetitle">Bullet Chess 2′<div class="gamestripesubtitle">2 Min</div></div>
-<div class="gamestripelink"><a href="javascript:openGame(&#39;ChessBullet2&#39;)">Bullet Chess 2′ - Play Now!</a></div> <div class="gamestripepc"><span class="ggplayercount" style="visibility: visible;" name="pcp"> (190 players)</span></div>
-</div>
-<div class="gamestripe">
-<div class="gamestripetitle">Bullet Chess<div class="gamestripesubtitle">1 Min</div></div>
-<div class="gamestripelink"><a href="javascript:openGame(&#39;ChessBullet&#39;)">Bullet Chess - Play Now!</a></div> <div class="gamestripepc"><span class="ggplayercount" style="visibility: visible;" name="pcp"> (119 players)</span></div>
-</div>
-<div id="screenshots" class="bottomalign">
-<p style="font-weight:bold;">Screenshots</p>
-<a title="Chess" href="https://#/chess/images/screenshot-01.jpg" rel="clearbox[gallery=Screenshots]"><img src="./index_files/screenshot-01-th.jpg"></a>
-<a title="Chess" href="https://#/chess/images/screenshot-02.jpg" rel="clearbox[gallery=Screenshots]"><img src="./index_files/screenshot-02-th.jpg"></a>
-<a title="Chess" href="https://#/chess/images/screenshot-03.jpg" rel="clearbox[gallery=Screenshots]"><img src="./index_files/screenshot-03-th.jpg"></a>
-</div>
-</div>
-<div id="contentbottom"></div>
-</div>
-<div id="footer"><div id="footerdivider"></div>
-<span id="footerlinks"><a href="https://#/legal.html#terms" target="_blank">Terms of Service</a> &nbsp;
-<a href="https://#/legal.html#privacy" target="_blank">Privacy Policy</a> &nbsp;
-<a href="https://#/contact.html">Contact Us</a></span><br><br>
-Copyright © 2001-2020 FlyOrDie Free Games Online. 
-FlyOrDie® is a registered trademark of <a href="http://www.solware.com/" target="_blank">Solware Ltd.</a>
-</div>
-<a id="flags" href="javascript:void(0)"><span class="flag" style="background-position: 0 -180px"></span><span id="flagd">&nbsp;</span></a>
-<div id="langs" style="display:none"><a class="lang" onclick="setLoc(&#39;bg&#39;,1);return 1;" href="https://#/bg/sahmat/"><span class="flag" style="background-position: left -40px"></span><span class="lname">Български</span></a><a class="lang" onclick="setLoc(&#39;ru&#39;,1);return 1;" href="https://#/ru/chess/"><span class="flag" style="background-position: left -720px"></span><span class="lname">Русский</span></a><a class="lang" onclick="setLoc(&#39;sr&#39;,1);return 1;" href="https://#/sr/chess/"><span class="flag" style="background-position: left -800px"></span><span class="lname">Српски</span></a><a class="lang" onclick="setLoc(&#39;uk&#39;,1);return 1;" href="https://#/ua/sahi/"><span class="flag" style="background-position: left -900px"></span><span class="lname">Українська</span></a><a class="lang" onclick="setLoc(&#39;cs&#39;,1);return 1;" href="https://#/hry/sachy/"><span class="flag" style="background-position: left -80px"></span><span class="lname">Čeština</span></a><a class="lang" onclick="setLoc(&#39;da&#39;,1);return 1;" href="https://#/spil/skak/"><span class="flag" style="background-position: left -120px"></span><span class="lname">Dansk</span></a><a class="lang" onclick="setLoc(&#39;de&#39;,1);return 1;" href="http://www.startspiele.de/schach/"><span class="flag" style="background-position: left -140px"></span><span class="lname">Deutsch</span></a><a class="lang" onclick="setLoc(&#39;et&#39;,1);return 1;" href="https://#/mangud/male/"><span class="flag" style="background-position: left -220px"></span><span class="lname">Eesti keel</span></a><span class="langc" onclick="setLoc(&#39;en&#39;,1);return 1;" href="./"><span class="flag" style="background-position: left -180px"></span><span class="lnamec">English</span></span><a class="lang" onclick="setLoc(&#39;es&#39;,1);return 1;" href="https://#/juegos/ajedrez.html"><span class="flag" style="background-position: left -200px"></span><span class="lname">Español</span></a><a class="lang" onclick="setLoc(&#39;fr&#39;,1);return 1;" href="https://#/jeu/echecs.html"><span class="flag" style="background-position: left -300px"></span><span class="lname">Français</span></a><a class="lang" onclick="setLoc(&#39;hr&#39;,1);return 1;" href="https://#/igre/sah/"><span class="flag" style="background-position: left -340px"></span><span class="lname">Hrvatski</span></a><a class="lang" onclick="setLoc(&#39;id&#39;,1);return 1;" href="https://#/permainan/catur/"><span class="flag" style="background-position: left -380px"></span><span class="lname">Indonesia</span></a><a class="lang" onclick="setLoc(&#39;it&#39;,1);return 1;" href="https://#/giochi/scacchi/"><span class="flag" style="background-position: left -400px"></span><span class="lname">Italiano</span></a><a class="lang" onclick="setLoc(&#39;lv&#39;,1);return 1;" href="https://#/speles/sahs/"><span class="flag" style="background-position: left -540px"></span><span class="lname">Latviešu</span></a><a class="lang" onclick="setLoc(&#39;lt&#39;,1);return 1;" href="https://#/zaidimai/sachmatai/"><span class="flag" style="background-position: left -520px"></span><span class="lname">Lietuviškai</span></a><a class="lang" onclick="setLoc(&#39;hu&#39;,1);return 1;" href="http://www.sakk.hu/"><span class="flag" style="background-position: left -360px"></span><span class="lname">Magyar</span></a><a class="lang" onclick="setLoc(&#39;nl&#39;,1);return 1;" href="https://#/spel/schaken/"><span class="flag" style="background-position: left -620px"></span><span class="lname">Nederlands</span></a><a class="lang" onclick="setLoc(&#39;no&#39;,1);return 1;" href="https://#/spill/sjakk/"><span class="flag" style="background-position: left -640px"></span><span class="lname">Norsk</span></a><a class="lang" onclick="setLoc(&#39;pl&#39;,1);return 1;" href="http://www.flyordie.pl/szachy/"><span class="flag" style="background-position: left -660px"></span><span class="lname">Polski</span></a><a class="lang" onclick="setLoc(&#39;pt&#39;,1);return 1;" href="https://#/jogo/xadrez.html"><span class="flag" style="background-position: left -680px"></span><span class="lname">Português</span></a><a class="lang" onclick="setLoc(&#39;ro&#39;,1);return 1;" href="https://#/jocuri/sah/"><span class="flag" style="background-position: left -700px"></span><span class="lname">Română</span></a><a class="lang" onclick="setLoc(&#39;sq&#39;,1);return 1;" href="https://#/lojera/shah/"><span class="flag" style="background-position: left -780px"></span><span class="lname">Shqip</span></a><a class="lang" onclick="setLoc(&#39;sk&#39;,1);return 1;" href="https://#/sk/sach/"><span class="flag" style="background-position: left -740px"></span><span class="lname">Slovensky</span></a><a class="lang" onclick="setLoc(&#39;fi&#39;,1);return 1;" href="https://#/pelit/shakki/"><span class="flag" style="background-position: left -280px"></span><span class="lname">Suomi</span></a><a class="lang" onclick="setLoc(&#39;sv&#39;,1);return 1;" href="https://#/spela/schack/"><span class="flag" style="background-position: left -820px"></span><span class="lname">Svenska</span></a><a class="lang" onclick="setLoc(&#39;tr&#39;,1);return 1;" href="https://#/oyun/satranc/"><span class="flag" style="background-position: left -880px"></span><span class="lname">Türkçe</span></a><a class="lang" onclick="setLoc(&#39;ka&#39;,1);return 1;" href="https://#/ka/chess/"><span class="flag" style="background-position: left -460px"></span><span class="lname">ქართული</span></a><a class="lang" onclick="setLoc(&#39;ar&#39;,1);return 1;" href="https://#/ar/chess/"><span class="flag" style="background-position: left 0px"></span><span class="lname">العربيّة</span></a><a class="lang" onclick="setLoc(&#39;zh_CN&#39;,1);return 1;" href="https://#/zh_cn/chess/"><span class="flag" style="background-position: left -980px"></span><span class="lname">汉语</span></a><a class="lang" onclick="setLoc(&#39;zh_TW&#39;,1);return 1;" href="https://#/zh_tw/chess/"><span class="flag" style="background-position: left -1000px"></span><span class="lname">繁體中文</span></a></div>
-</div><div id="shb"><div id="shbl"></div><div id="shbr"></div></div>
-<div id="eucc" style="display:none; position: fixed !important; position: absolute; left:50%; margin-left: -321px; width: 640px; top:-60px; height: 41px; border: 1px solid #026196; border-top: 0 none; border-radius: 0 0 10px 10px; z-index: 1000; box-shadow: 0 0px 5px 3px rgba(0,0,0,0.3); padding-top: 8px; -webkit-transition: top 1s ease; transition: top 1s ease; background-color: #cfe4f7; color: #293e6a; text-align: center; font-size: 14px; line-height: 14px; white-space: nowrap;">
-<span style="display:inline-block; max-width: 660px; white-space: normal;">We are using cookies.
-<a href="https://#/legal.html#privacy#cookies" target="_blank">Privacy Policy</a>
-</span><a style="display: inline-block; width: 130px; margin-left: 20px; padding: 9px 0px; line-height: 15px; background-color: #026196; color: #fff; border-radius: 5px; text-decoration: none; text-align: center; font-weight: bold;" href="javascript:euccOk()">Got it!</a></div>
-<script>
-function earlyInit()  {
-loadGA('UA-295578-1');
-fillLangs();
-loadPC(0,'player#..+|[^1]=s',",");
-if(this.warnMobile) warnMobile();
+
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-1920419-7', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="https://#/new/wp-content/uploads/2016/08/cropped-KC_favicon_512x512-32x32.png" sizes="32x32">
+<link rel="icon" href="https://#/new/wp-content/uploads/2016/08/cropped-KC_favicon_512x512-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://#/new/wp-content/uploads/2016/08/cropped-KC_favicon_512x512-180x180.png">
+<meta name="msapplication-TileImage" content="https://#/new/wp-content/uploads/2016/08/cropped-KC_favicon_512x512-270x270.png">
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			@media (max-width:767px){
+	.nomobile{display:none;
+	overflow:hidden;}
 }
-if(this.free_online_games) earlyInit();
+@media (min-width:767px){
+	.mobile{display:none;
+		overflow:hidden;}
+}
+.responsive{
+	width:100% !important;
+	height:auto !important;
+}		</style>
+					<style type="text/css">.js .nav-collapse-0.opened{max-height:0px !important}</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style><script type="text/javascript" charset="UTF-8" src="./index_files/common.js.Без названия"></script><script type="text/javascript" charset="UTF-8" src="./index_files/util.js.Без названия"></script></head>
+
+			<body class="page-template page-template-main page-template-main-php page page-id-2217 page-parent theme-footer-sticky pb" style="opacity: 1;">
+				
+				
+			<div class="pb-menu pb pb-menu-template-type-1" id="pb_menu_9094030D55E48B6EB1F8696480CE2BAB" style="display: block;">
+				<div class="pb-main pb-clear-fix">
+					<div class="pb-logo">
+						
+				<a href="https://#/" title="Kid Chess® Atlanta, Chess for Kids" style="width: 204px;">
+					<img src="./index_files/kid-chess-logo-site-02.png" alt="Kid Chess® Atlanta, Chess for Kids" style="max-height: 126px;">
+				</a>
+			
+    				</div>
+         
+ 					<div class="pb-menu-default">
+						<ul id="menu-main" class="sf-menu pb-reset-list pb-clear-fix sf-js-enabled">
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home sf-mega-enable-0 pb-menu-icon pb-menu-icon-31D8E0C40D69B277A83ADD3ECEFE55F3 ">
+					<a href="https://#/"><span></span>Home</a>
+			
+				</li>
+			
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0 pb-menu-icon pb-menu-icon-EE4C63F8FD504A603213ABBB6AC12B95">
+					<a href="https://#/kid-chess-online/" class="sf-with-ul"><span></span>Kid Chess® Online</a>
+			
+				<ul style="display: none;">
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/kid-chess-online/online-clubs/"><span></span>Kid Chess® Online Clubs</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/kid-chess-online/online-camps/"><span></span>Kid Chess® Online Camps</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/kid-chess-online/kid-chess-online-video-library/"><span></span>Kid Chess® Online Video Library</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learning-practice-tools/"><span></span>Learning &amp; Practice Tools</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/kid-chess-online/kid-chess-online-school-standings/"><span></span>School Standings</a>
+			
+				</li>
+			
+				</ul>
+			
+				</li>
+			
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0 pb-menu-icon pb-menu-icon-B0558536342E53E426D28AA37336EC2A">
+					<a href="https://#/our-programs/" class="sf-with-ul"><span></span>Our Programs</a>
+			
+				<ul style="display: none;">
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/our-programs/for-schools/"><span></span>Kid Chess® For Your School</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/our-programs/schedule/"><span></span>After School Programs</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/our-programs/tournaments-and-events/"><span></span>Tournaments and Events</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/our-programs/homeschool-groups/"><span></span>Homeschool Groups</a>
+			
+				</li>
+			
+				</ul>
+			
+				</li>
+			
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0 pb-menu-icon pb-menu-icon-338B3D146ADE7D16FEE14BCDBFD3B257">
+					<a href="https://#/learn-chess/" class="sf-with-ul"><span></span>Learn Chess</a>
+			
+				<ul style="display: none;">
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/kid-chess-evaluator/"><span></span>Kid Chess® Evaluator</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/kid-chess-cartoon-lessons/"><span></span>Kid Chess® Cartoon Lessons</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/monster-chess/"><span></span>Monster Chess</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/knights-tour/"><span></span>Knight's Tour</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/checkmate-the-king/"><span></span>Checkmate the King</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/ezchess/"><span></span>EZChess</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/puzzle-jam/"><span></span>Puzzle Jam</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/play-chess/flash-chess/"><span></span>Flash Chess!</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/setting-up/"><span></span>Setting Up</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/look-first-move-later/"><span></span>Look First, Move Later!</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/resources-2/"><span></span>Resources</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/glossary-of-chess-terms/"><span></span>Glossary of Chess Terms</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/skill-levels-and-practice-resources/"><span></span>Skill Levels and Practice Resources</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/learn-chess/kid-chess-puzzles/"><span></span>Kid Chess® Puzzles!</a>
+			
+				</li>
+			
+				</ul>
+			
+				</li>
+			
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0 pb-menu-icon pb-menu-icon-E2159B0C2C493CE16ABFE4C53AEFCC63">
+					<a href="https://#/about-us/" class="sf-with-ul"><span></span>About Us</a>
+			
+				<ul style="display: none;">
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/about-us/instructors/"><span></span>Meet the Kid Chess Team</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/about-us/why-chess-makes-you-smart/"><span></span>Why Chess Makes You Smart</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+					<a href="https://#/ajc-article-about-kid-chess/"><span></span>AJC Article About Kid Chess®</a>
+			
+				</li>
+			
+				</ul>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0 pb-menu-icon pb-menu-icon-69011BA84D5CAAE7267C0F06632D19CC ">
+					<a href="https://#/career-opportunities/"><span></span>Careers</a>
+			
+				</li>
+			
+				<li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0 pb-menu-icon pb-menu-icon-FF6DDB60BEC1B2D8745D873AC2A1C8FC ">
+					<a href="https://#/contact-us-ii/"><span></span>Contact Us</a>
+			
+				</li>
+			</ul>
+					</div>
+					<div class="pb-menu-responsive">
+						<div id="menu-main-1" class="pb-clear-fix"><a href="https://#/play-chess/#" class="nav-toggle" aria-hidden="false">Menu<span><span></span></span></a><div id="pb_menu_responsive_BD39F43A690C985808AFC733F29C0C51" class="nav-collapse nav-collapse-0 closed" aria-hidden="true" style="transition: max-height 284ms ease 0s; position: absolute;"><ul>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+				<a href="https://#/">Home</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+				<a href="https://#/kid-chess-online/">Kid Chess® Online</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/kid-chess-online/online-clubs/">-- Kid Chess® Online Clubs</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/kid-chess-online/online-camps/">-- Kid Chess® Online Camps</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/kid-chess-online/kid-chess-online-video-library/">-- Kid Chess® Online Video Library</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learning-practice-tools/">-- Learning &amp; Practice Tools</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/kid-chess-online/kid-chess-online-school-standings/">-- School Standings</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+				<a href="https://#/our-programs/">Our Programs</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/our-programs/for-schools/">-- Kid Chess® For Your School</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/our-programs/schedule/">-- After School Programs</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/our-programs/tournaments-and-events/">-- Tournaments and Events</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/our-programs/homeschool-groups/">-- Homeschool Groups</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+				<a href="https://#/learn-chess/">Learn Chess</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/kid-chess-evaluator/">-- Kid Chess® Evaluator</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/kid-chess-cartoon-lessons/">-- Kid Chess® Cartoon Lessons</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/monster-chess/">-- Monster Chess</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/knights-tour/">-- Knight's Tour</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/checkmate-the-king/">-- Checkmate the King</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/ezchess/">-- EZChess</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/puzzle-jam/">-- Puzzle Jam</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/play-chess/flash-chess/">-- Flash Chess!</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/setting-up/">-- Setting Up</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/look-first-move-later/">-- Look First, Move Later!</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/resources-2/">-- Resources</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/glossary-of-chess-terms/">-- Glossary of Chess Terms</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/skill-levels-and-practice-resources/">-- Skill Levels and Practice Resources</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/learn-chess/kid-chess-puzzles/">-- Kid Chess® Puzzles!</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+				<a href="https://#/about-us/">About Us</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/about-us/instructors/">-- Meet the Kid Chess Team</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/about-us/why-chess-makes-you-smart/">-- Why Chess Makes You Smart</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/ajc-article-about-kid-chess/">-- AJC Article About Kid Chess®</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/career-opportunities/">Careers</a>
+			</li>
+		
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="https://#/contact-us-ii/">Contact Us</a>
+			</li>
+		</ul></div></div>
+					</div>
+                </div>
+                        
+			</div>
+			<div class="pb-script-tag">
+				<script type="text/javascript">
+					jQuery(document).ready(function($)
+					{
+						$('#pb_menu_9094030D55E48B6EB1F8696480CE2BAB').PBMenu({"responsive_mode":"768","sticky_enable":"","hide_scroll_enable":"0","menu_animation_enable":"1","menu_animation_speed_open":"400","menu_animation_speed_close":"200","menu_animation_delay":"0","scroll_animation_enable":"1","scroll_animation_speed":"1000","scroll_animation_easing":"easeOutQuint","responsive_menu_id":"pb_menu_responsive_BD39F43A690C985808AFC733F29C0C51","responsive_menu_label":"Menu"});
+					});
+				</script>
+			</div>
+		
+				<div class="theme-page" style="background-color: rgb(12, 167, 172); margin-bottom: 252px;">
+					<div class="theme-page-content theme-clear-fix">
+<div id="pb_line_BF1A44674A2A69024CF50B7D6E68EBF9" class="pb-line pb-clear-fix" style="background-color:#0ca7ac;background-repeat:no-repeat;"><ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main"><li class="pb-layout-column-left" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-space-line"></div><div class="pb-space pb-clear-fix" style="margin-top:-65px;"></div></div></li></ul></div><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_BF1A44674A2A69024CF50B7D6E68EBF9").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script></div><div id="pb_line_B4C699A1C273C3525F511FC65FFB4C60" class="pb-line pb-clear-fix" style="background-repeat:no-repeat;"><ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main"><li class="pb-layout-column-left" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-iframe nomobile" style="width:1020px;"><div class="pb-iframe-content" style="height:300px;padding-bottom:0px;"><iframe src="./index_files/index.html"></iframe></div></div><div class="pb-iframe mobile" style="width:300px;"><div class="pb-iframe-content" style="height:330px;padding-bottom:0px;"><iframe src="./index_files/index(1).html"></iframe></div></div></div></li></ul></div><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_B4C699A1C273C3525F511FC65FFB4C60").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script></div><div id="pb_line_7D9958E569E303E68320B6F47568EC27" class="pb-line pb-clear-fix pb-margin-bottom-20" style="background-repeat:no-repeat;background-image:url(&#39;https://#/new/wp-content/uploads/2016/06/bg-pattern-1024x819.gif&#39;);background-size:cover;padding-top:10px;padding-bottom:100px;"><ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main"><li class="pb-layout-column-left" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-text"><h2 style="text-align: center;"><span style="color: #fcfd88;"><strong>Let’s Play Some Online Chess</strong></span></h2>
+<h6 style="text-align: center;"><span style="color: #ffffff;">LEARN ABOUT CHESS, PLAY CHESS, AND HAVE SOME FUN ALONG THE WAY! LET’S GET STARTED!</span></h6>
+</div></div></li></ul></div><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_7D9958E569E303E68320B6F47568EC27").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script></div><div id="pb_line_0028F4D20515D1E665C26DDB139DE086" class="pb-line pb-clear-fix" style="background-color:#0ca7ac;background-repeat:no-repeat;"><ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main"><li class="pb-layout-column-left" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-space-line"></div><div class="pb-space pb-clear-fix" style="margin-top:-110px;"></div></div></li></ul></div><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_0028F4D20515D1E665C26DDB139DE086").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script></div><div id="pb_line_5DE90FAF61762C50D422A333D0C2BF22" class="pb-line pb-clear-fix theme-section-padding-bottom" style="background-repeat: repeat-y; background-image: url(&quot;https://#/new/wp-content/uploads/2016/06/bg-play-chess-new.png&quot;); background-size: cover; padding-top: 30px; background-position: 50% -180.3px;"><ul class="pb-layout pb-layout-66x33 pb-reset-list pb-clear-fix pb-main"><li class="pb-layout-column-left" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-vertical-grid pb-clear-fix"><ul class="pb-reset-list"><li class="pb-clear-fix pb-vertical-grid-line-even"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#10b5b9;"><h5><a href="https://#/new/play-chess/ezchess/"><img class="alignleft" src="./index_files/play-board-ezchess.jpg" alt="play-board-ezchess" width="166" height="166"></a><strong><span style="color: #ffffff;">EzChess</span></strong></h5> <span style="color: #ffffff;">Practice piece movement by playing a real game of chess against our EzChess computer! Recommended for beginning-level students, EzChess will basically play random moves as you play your first real games of chess.</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#10b5b9;"></div></li><li class="pb-clear-fix pb-vertical-grid-line-odd"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#0ca7ac;"><h5><a href="https://#/new/play-chess/puzzle-jam/"><img class="alignleft" src="./index_files/play-board-checkmate.jpg" alt="play-board-puzzle-jam" width="166" height="166"></a><strong><span style="color: #ffffff;">Puzzle Jam!</span></strong></h5> <span style="color: #ffffff;">Introducing Puzzle Jam! Solve as many puzzles as you can before the clock runs out!  Don't make too many mistakes!</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#0ca7ac;"></div></li><li class="pb-clear-fix pb-vertical-grid-line-even"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#10b5b9;"><h5><a href="https://#/new/play-chess/monster-chess/"><img class="alignleft" src="./index_files/play-board-monster.jpg" alt="play-board-ezchess" width="166" height="166"></a><strong><span style="color: #ffffff;">Monster Chess</span></strong></h5> <span style="color: #ffffff;">Learn how the pieces move by playing Monster Chess. Select the chess piece you want and run around the board gobbling up the other side's pawns. Try and beat your own best time!</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#10b5b9;"></div></li><li class="pb-clear-fix pb-vertical-grid-line-odd"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#0ca7ac;"><h5><a href="https://#/new/play-chess/checkmate-the-king/"><img class="alignleft" src="./index_files/play-board-checkmate.jpg" alt="play-board-ezchess" width="166" height="166"></a><strong><span style="color: #ffffff;">Checkmate the King</span></strong></h5> <span style="color: #ffffff;">Practice different forms of check-mate now. After all, check-mate is how you win the game! Try and beat your own best time!</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#0ca7ac;"></div></li><li class="pb-clear-fix pb-vertical-grid-line-even"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#10b5b9;"><h5><a href="https://#/new/play-chess/flash-chess/"><img class="alignleft" src="./index_files/play-board-flash.jpg" alt="play-board-ezchess" width="166" height="166"></a><strong><span style="color: #ffffff;">Flash Chess</span></strong></h5> <span style="color: #ffffff;">Play at three different levels. Beginner, as in easy to beat. Casual knows the ABC's (as in Activate, Be Safe, Centralize). And Advanced, as in it will try to win! (Requires Adobe Flash player.)</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#10b5b9;"></div></li><li class="pb-clear-fix pb-vertical-grid-line-odd"><div class="pb-vertical-grid-column-name" style="width:100%;color:#ffffff;background-color:#0ca7ac;"><h5><a href="https://#/new/play-chess/knights-tour/"><img class="alignleft" src="./index_files/play-board-tour.jpg" alt="play-board-ezchess" width="166" height="166"></a><strong><span style="color: #ffffff;">Knight's Tour!</span></strong></h5> <span style="color: #ffffff;">All you have to do is visit each square on the chessboard one time and one time ONLY with just a lone knight. How tough can it be to do all 64 squares? Answer: VERY tough! But we know you're up to it, and it's a great way to learn the knight's tricky move pattern. Give it a whirl, and beat your high score! (Requires Adobe Flash Player.)</span></div><div class="pb-vertical-grid-column-value" style="width:100%;color:#ffffff;background-color:#0ca7ac;"></div></li></ul></div></div></li><li class="pb-layout-column-right" style="visibility: visible;"> <div class="pb-space-line"></div><div><div class="pb-text"><h5><span style="color: #ffffff;">Kid Chess Evaluator</span></h5>
+<p><a href="https://#/new/play-chess/kid-chess-evaluator/"><img class="size-full wp-image-2352 aligncenter" src="./index_files/chess-evaluator.gif" alt="chess-evaluator" width="380" height="321"></a><span style="color: #ffffff;">Quiz your chess skills in different areas such as tactics and checkmates. These fun puzzles are going to make your brain grow and improve your chess game. Give it a try.</span></p>
+<hr>
+<p><a href="https://#/learn-chess/kid-chess-cartoon-lessons/" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-2990 size-full" src="./index_files/cartoon-link-new-02.png" width="380" height="274" srcset="https://#/new/wp-content/uploads/2016/06/cartoon-link-new-02.png 380w, https://#/new/wp-content/uploads/2016/06/cartoon-link-new-02-300x216.png 300w" sizes="(max-width: 380px) 100vw, 380px"></a></p>
+<p><span style="color: #ffffff;">You can watch all of the same videos at home that you see at school and at our camps! Review what you saw today in chess club, or if you missed class, catch up quickly!&nbsp;</span></p>
+</div></div></li></ul></div><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_5DE90FAF61762C50D422A333D0C2BF22").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"1","bg_parallax_mobile_enable":"0"},0);});</script></div>
+					</div>
+				
+				</div>
+				<div class="theme-footer theme-clear-fix" style="visibility: visible;">
+					<div class="theme-footer-top theme-clear-fix" style="background-image:url(&#39;https://#/new/wp-content/uploads/2016/07/footer-bg-purple.jpg&#39;);background-repeat:repeat;background-position:0px 0px;background-size:auto;">
+
+						<div class="theme-main theme-layout-25x25x25x25">
+													</div>
+						
+					</div>
+					<div class="theme-footer-bottom theme-clear-fix">
+						<div class="theme-main theme-clear-fix">
+							<ul class="pb-social-icon pb-social-icon-type-gr pb-reset-list pb-clear-fix aligncenter" id="pb_social_icon_9EABCC85E7B7D3A460F0D4D9A7E1A4A1"><li><a href="https://twitter.com/kidchess" class="pb-social-icon-twitter pb-window-target-blank" title="Twitter" target="_blank"></a></li><li><a href="https://www.facebook.com/pages/Kid-Chess/136877747901" class="pb-social-icon-facebook pb-window-target-blank" title="Facebook" target="_blank"></a></li><li><a href="http://instagram.com/kidchess" class="pb-social-icon-instagram pb-window-target-blank" title="Instagram" target="_blank"></a></li><li><a href="http://www.linkedin.com/company/kid-chess" class="pb-social-icon-linkedin pb-window-target-blank" title="Linkedin" target="_blank"></a></li><li><a href="http://pinterest.com/source/kidchess.com/" class="pb-social-icon-pinterest pb-window-target-blank" title="Pinterest" target="_blank"></a></li></ul><div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$('#pb_social_icon_9EABCC85E7B7D3A460F0D4D9A7E1A4A1').PBSocialIcon({"in":[],"out":[]});});</script></div>
+<div class="aligncenter pb-margin-top-20">&nbsp;Please read our <span style="text-decoration: underline;"><a href="http://kidchess.com/new/terms-of-service/" target="_blank">Terms and Conditions</a></span> and our <a href="http://kidchess.com/new/kid-chess-privacy-policy/" target="_blank"><span style="text-decoration: underline;">Privacy Policy</span>.</a>
+© 2016 Kid Chess, Inc., All rights reserved. (On Hostgator VPS.)</div>						</div>
+					</div>
+				</div>
+				<a href="https://#/play-chess/#up" id="theme-go-to-top" style="opacity: 0;"></a>
+
+<style> @media (max-width: 420px) { iframe.report_card_widget { max-width: 95%; }  } </style>
+<script src="./index_files/minimalist_review_stream_parent_listener-be2ee46de1fa94818caf8a07451a5318336c759ed2e0421faebe20946ab3f87f.js.Без названия"></script>
+
+
+
+<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=182787345398990&ev=PageView&noscript=1" alt="facebook_pixel"></noscript>
+<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
 </script>
+<script type="text/javascript" src="./index_files/saved_resource(8)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(9)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(10)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(11)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(12)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(13)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(14)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(15)"></script>
+<script type="text/javascript" src="./index_files/js"></script>
+<script type="text/javascript" src="./index_files/saved_resource(16)"></script>
+<script type="text/javascript" src="./index_files/saved_resource(17)"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pbOption = [];
+pbOption={"config":{"content_width":1050,"is_rtl":0}};;
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tt_config = [];
+tt_config = {"ajaxurl":"https:\/\/#\/new\/wp-admin\/admin-ajax.php"};;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/saved_resource(18)"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themeOption = [];
+themeOption={"rightClick":{"enable":"1"},"selection":{"enable":"1"},"fancyboxImage":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","helper_button_enable":"1","autoresize":"1","autocenter":"1","fittoview":"1","arrow":"1","close_button":"1","close_click":"0","next_click":"0","mouse_wheel":"1","autoplay":"0","loop":"1","playspeed":"3000","animation_effect_open":"fade","animation_effect_close":"fade","animation_effect_next":"elastic","animation_effect_previous":"elastic","easing_open":"easeInQuad","easing_close":"easeInQuad","easing_next":"easeInQuad","easing_previous":"easeInQuad","speed_open":"250","speed_close":"250","speed_next":"250","speed_previous":"250"},"fancyboxVideo":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","autoresize":"1","autocenter":"1","fittoview":"1","close_button":"1"},"goToPageTop":{"enable":"1","hash":"up","animation_enable":"1","animation_duration":"500","animation_easing":"easeInCubic"},"config":{"theme_url":"https:\/\/#\/new\/wp-content\/themes\/fable\/","is_rtl":0,"woocommerce_enable":0}};;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/saved_resource(19)"></script>
+			
+			
+		
 
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-<div id="screenshottip" style="display: none;"></div><div id="CB_Debug"></div><div id="CB_HiddenTextT" style="font-family: helvetica, arial, sans-serif; font-weight: normal; font-size: 13px;"></div><div id="CB_HiddenTextC" style="font-family: helvetica, arial, sans-serif; font-weight: normal; font-size: 11px; text-align: justify;"></div><div id="CB_HiddenTextG" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(170, 170, 170); font-size: 11px;"></div><div id="CB_All"><div id="CB_ContentHide" style="background-color: rgb(32, 32, 32); opacity: 0; visibility: hidden; height: 1656px;"></div><div id="CB_OutNavContainer"><div id="CB_OutNavG">&nbsp;</div><div id="CB_OutNavBG"></div><div id="CB_OutNavB"><a onmouseover="_C94(_C110);" onmouseout="_C85();" id="CB_ONRL" name="rl"><img class="CB_OutNav" src="./index_files/blank.gif" alt="Rotate image left by 90 degrees" title="Rotate image left by 90 degrees"></a><a onmouseover="_C94(_C92);" onmouseout="_C85();" id="CB_ONPRV"><img class="CB_OutNav" src="./index_files/blank.gif" alt="Previous" title="Previous"></a><a name="CB_ONSSP" id="CB_ONSSP" style="position: absolute; visibility: hidden;"><img alt="Stop slideshow" title="Stop slideshow" src="./index_files/blank.gif"></a><a name="CB_ONSSS" id="CB_ONSSS"><img alt="Start slideshow" title="Start slideshow" src="./index_files/blank.gif"></a><a onmouseover="_C94(_C91);" onmouseout="_C85();" id="CB_ONNXT"><img class="CB_OutNav" src="./index_files/blank.gif" alt="Next" title="Next"></a><a onmouseover="_C94(_C111);" onmouseout="_C85();" id="CB_ONRR" name="rr"><img class="CB_OutNav" src="./index_files/blank.gif" alt="Rotate image right by 90 degrees" title="Rotate image right by 90 degrees"></a></div></div><div id="CB_OSD" style="opacity: 0.75;"></div><div id="CB_SlideShowBar" style="background-color: rgb(255, 255, 255); opacity: 0.5;"></div><img id="CB_LoadingImage" alt="loading" src="./index_files/blank.gif"><table cellspacing="0" cellpadding="0" id="CB_Window" style="width: 1px; margin-left: -12px; margin-top: -19.5px;"><tbody><tr id="CB_Header" style="height: 8px;"><td id="CB_TopLeft"><div class="CB_RoundPixBugFix" style="width: 8px; height: 8px;"></div></td><td id="CB_Top"></td><td id="CB_TopRight"><div class="CB_RoundPixBugFix" style="width: 8px; height: 8px;"></div></td></tr><tr id="CB_Body"><td id="CB_Left" style="width: 8px;"></td><td id="CB_Content" valign="top" align="left" style="background-color: rgb(255, 255, 255);"><div id="CB_Padding" style="padding: 4px; background-color: rgb(255, 255, 255);"><div id="CB_ImgContainer"><span id="CB_CloseWindow" alt="Close" title="Close"></span><div id="CB_NotImgContent"></div><div id="CB_ShowTh" style="display: none;"></div><div id="CB_Thumbs"><div id="CB_Thumbs2"></div></div><img id="CB_Image" alt="" src="./index_files/blank.gif" style="border: 0px solid rgb(221, 221, 221); visibility: hidden; opacity: 0;"><div id="CB_PrevNext"><span id="CB_NavPrev" alt=""></span><span id="CB_NavNext" alt=""></span><div id="CB_ImgHide" style="background-color: rgb(0, 0, 0); opacity: 0.35;"></div><span id="CB_SlideShowP" alt="Stop slideshow" title="Stop slideshow"></span><span id="CB_SlideShowS" alt="Start slideshow" title="Start slideshow"></span><a id="CB_Prev" style="background-image: url(&quot;https://#/pub/clearbox/pic/blank.gif&quot;);"></a><a id="CB_Next" style="background-image: url(&quot;https://#/pub/clearbox/pic/blank.gif&quot;);"></a></div></div><div id="CB_Text" style="height: 0px; display: block; visibility: hidden; opacity: 0;"><div id="CB_TT" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(119, 119, 119); font-size: 13px;"></div><div id="CB_TC" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(153, 153, 153); font-size: 11px; text-align: justify;"></div><div id="CB_TG" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(170, 170, 170); font-size: 11px;"></div></div></div></td><td id="CB_Right" style="width: 8px;"></td></tr><tr id="CB_Footer" style="height: 8px;"><td id="CB_BtmLeft"><div class="CB_RoundPixBugFix" style="width: 8px; height: 8px;"></div></td><td id="CB_Btm"></td><td id="CB_BtmRight"><div class="CB_RoundPixBugFix" style="width: 8px; height: 8px;"></div></td></tr></tbody></table></div><iframe id="google_osd_static_frame_3822164978961" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./index_files/saved_resource(3).html"></iframe></body></html>
+Page Caching using disk: enhanced 
+Database Caching 26/36 queries in 0.057 seconds using disk
+
+Served from: # @ 2020-11-18 12:42:17 by W3 Total Cache
+--><div id="supersized-loader"></div><ul id="supersized"></ul><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div></body></html>

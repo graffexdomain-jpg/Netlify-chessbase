@@ -1,0 +1,1 @@
+function removeCrossOriginIframe(e){"close"==e.data.action&&document.querySelectorAll("iframe.report_card_widget")[0].remove()}window.addEventListener("message",removeCrossOriginIframe,!1);
