@@ -1,0 +1,177 @@
+﻿/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin: 0;
+ padding-left: 15px;
+ height: 28px;
+ font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ background-image: url(images/tab-center-disabled.gif);
+ background-repeat:repeat-x;
+ padding: 3px 0.5em;
+ margin: 0px;
+ text-decoration: none;
+ height: 28px;
+ position: relative; float: left; 
+ line-height:22px; 
+ vertical-align:middle;
+ text-align:center; 
+}
+
+ul.tabbernav li div.leftNav
+{
+ background-image: url(images/tab-left-disabled.gif);
+ background-repeat:no-repeat;
+ margin: 0px;               
+ width: 5px; 
+ height: 28px;
+ padding: 0px;
+position: relative; float: left; 
+}
+ul.tabbernav li div.rightNav
+{
+ background-image: url(images/tab-right-disabled.gif);
+ background-repeat:no-repeat;
+ margin-left: 0px;                
+ width: 5px;
+ height: 28px;
+ padding: 0px;
+position: relative; float: left; 
+}
+
+ul.tabbernav li a:link { color: #448; }
+ul.tabbernav li a:visited { color: #667; }
+
+ul.tabbernav li a:hover
+{
+ background-image: url(images/tab-center-disabled.gif);
+ background-repeat:repeat-x;
+ color: #000;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-image: url(images/tab-center-enabled.gif);
+ background-repeat:repeat-x;
+}
+ul.tabbernav li.tabberactive div.leftNav
+{
+ background-image: url(images/tab-left-enabled.gif);
+ background-repeat:repeat-x;
+}
+ul.tabbernav li.tabberactive div.rightNav
+{
+ background-image: url(images/tab-right-enabled.gif);
+ background-repeat:repeat-x;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ background-image: url(images/tab-center-enabled.gif);
+ background-repeat:repeat-x;
+ color: #000;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:5px;
+ margin: 0px;
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+ vertical-align:middle;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}
+
+.icu-tab-top-left, .icu-tab-top-right, .icu-tab-bottom-left, .icu-tab-bottom-right { 
+	background-image: url('images/tab-full-corners3.gif'); /* CHANGE: path and name of your image */
+	height: 5px;       /* CHANGE: replace by the height of one of your corners (= 1/2 height of the image) */
+	font-size: 2px;    /* DNC: correction IE for height of the <div>'s */
+	padding: 0px;
+	}
+.icu-tab-top-left, .icu-tab-bottom-left { 
+	margin-right: 5px; /* CHANGE: replace by the width of one of your corners */
+	}
+.icu-tab-top-right, .icu-tab-bottom-right { 
+	margin-left: 5px;  /* CHANGE: replace by the width of one of your corners */
+	margin-top: -5px;  /* CHANGE: replace by the height of one of your corners */
+	}
+.icu-tab-top-right {
+	background-position: 100% 0;    /* DNC: position right corner at right side, no vertical changes */
+	}
+.icu-tab-bottom-left  { 
+	background-position: 0 -5px;    /* CHANGE: replace second number by negative height of one of your corners */
+	}                        
+.icu-tab-bottom-right { 
+	background-position: 100% -5px; /* CHANGE: replace second number by negative height of one of your corners */
+	}
+.icu-tab-inside {
+	border-left: 1px solid #799AB9; /* YCC: color & properties of the left-borderline */
+	border-right: 1px solid #799AB9;/* YCC: color & properties of the right-borderline */
+	background: #EFF8FD;            /* YCC: background-color of the inside */
+	color: #000000;                 /* YCC: default text-color of the inside */
+	padding-left: 10px;             /* YCC: all texts at some distance of the left border */
+	padding-right:10px;             /* YCC: all texts at some distance of the right border */
+	}
+.icu-tab-notopgap    { margin-top: 0; }    /* DNC: to avoid splitting of the box */
+.icu-tab-nobottomgap { margin-bottom: -1px; padding-bottom: 1px; } /* DNC: to avoid splitting of the box */
+
