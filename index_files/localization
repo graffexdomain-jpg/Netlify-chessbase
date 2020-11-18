@@ -1,0 +1,80 @@
+
+(function( $ ) {
+    $.extend(true, $, {
+        tabletopia: {
+            localization: {
+
+                addToBookmarks: 'Add to Bookmarks',
+                apply: 'Apply',
+                applyCouponLabel:  'Enter Coupon Code',
+
+                cancel: 'Cancel',
+
+                dlc: 'DLC',
+                dlcSteam: 'Steam DLC',
+
+                enterCouponPH: 'Enter Coupon Code',
+                emptyPlaygroundTitle1: 'Invite or Find Opponents',
+                emptyPlaygroundTitle2: 'Go to Discord',
+                emptyPlaygroundTitle3: 'Play Solo',
+                emptyPlaygroundText1: 'Go to <a href="/games">All Games</a>, find a game and click <b>Play Now!</b><br/><br/>The game lobby provides several options:<br/>• <b>To play with friends outside Steam</b>, send them the room URL—they will play in browser for free.<br/>• <b>To invite other Tabletopia users</b>, click "Invite players”.<br/>• <b>To make your room visible to others</b>, check “Show in Find & Play”.',
+                emptyPlaygroundText2: 'Visit our <a class="js-external-link" href="https://discord.gg/4PsHHKm" target="_blank">Discord channel</a> to find opponents. Use it also as a voice and text chat during the game',
+                emptyPlaygroundText3: 'Try one of these solo games:',
+
+                emptyPlaygroundWidgetTitle1: 'No rooms to join at the moment',
+                emptyPlaygroundWidgetText1: 'Go to <a target="_blank" href="/games">Tabletopia - All Games</a>, find a game and click <b>Play Now!</b>',
+                emptyPlaygroundWidgetText2: 'Try these games:',
+
+                freeSeats: 'free seat(s)',
+
+                inGame: 'In-Game',
+                inLibrary: 'In Library',
+
+                gamesInProgress: 'Games in progress',
+
+                loading: 'Loading',
+
+                moreInfo: 'More Info',
+                moreRooms: 'More Rooms',
+                moreSoloGames: 'More solo games',
+
+                noGamesAtTheMoment: 'Sorry, no games in progress at the moment.',
+                noRoomsAtTheMoment: 'Sorry, no rooms to join at the moment.',
+                noSuitableRoomsSeeOther: 'More options',
+                embedFindPlay: 'Embed Find &amp; Play',
+                userTimeZone: 'All times are in your local time [GMT {0}]',
+
+                createdTime: 'Created',
+                startedAt: 'started ',
+
+                justNowLowercase: 'just now',
+                agoMinutes: 'minutes ago',
+                agoMinute: 'a minute ago',
+                agoHours: 'hours ago',
+                agoHour:  'an hour ago',
+                agoDays: 'days ago',
+                yesterdayLowercase: 'yesterday',
+                agoMonths: 'months ago',
+                agoMonth: 'a month ago',
+                agoYears: 'years ago',
+                agoYear: 'a year ago',
+
+                offline: 'Offline',
+                online: 'Online',
+
+                playNowFP: 'Play Now',
+                playLater: 'Play Later',
+                premiumGameHint: 'This game is only accessible with Premium',
+
+                roomsNotFound: 'No matching rooms found',
+                roomStatusGameInProgress: 'Game is in progress',
+                roomStatusLookingForPlayers: 'Looking for players',
+
+                totalPlayedTime: 'Total played time',
+
+                whatYouCanDo: 'Here&#39;s what you can do',
+			}
+        }
+    });
+}( jQuery ));
+

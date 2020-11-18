@@ -1,0 +1,57 @@
+
+(function( $ ) {
+
+    function httpEscape(v) {
+        return encodeURIComponent(v); // TODO
+    }
+
+    function routeBuilder(url, args){
+        var result = url;
+        for (var i = 0; i < args.length; i++) {
+            var arg = args[i];
+            if (arg != null) {
+                if (typeof (arg) != 'object') {
+                    result += '/' + httpEscape(arg);
+                } else {
+                    var first = true;
+                    $.each(arg, function (k, v) {
+                        if (v != null) {
+                            if (first) {
+                                result += '?';
+                                first = false;
+                            } else {
+                                result += '&';
+                            }
+                            result += httpEscape(k) + '=' + httpEscape(v);
+                        }
+                    });
+                }
+            }
+        }
+        return result;
+    }
+
+    function route(url) {
+        return function () {
+            return routeBuilder(url, arguments);
+        }
+    }
+    $.extend(true, $, {
+        tabletopia: {
+            routes: {
+                users: {
+                    activateCoupon: route('/playgroundusers/activatecouponcode'),
+                    current: route('/api/security/currentuser')
+                },
+                findPlay: {
+                    playNow: route('/v2/api/find-play/now'),
+                    playLater: route('/v2/api/find-play/later'),
+                    playInProgress: route('/v2/api/find-play/in-progress'),
+                    recommendedGames: route ('/api/games/recommended/solo'),
+                    recommendedWidgetGames: route('/api/games/recommended/widget')
+                }
+			}
+        }
+    });
+}( jQuery ));
+
