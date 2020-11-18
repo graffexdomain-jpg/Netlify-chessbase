@@ -7,17 +7,7 @@
     <meta property="fb:admins" content="100009393317655">
     <meta property="fb:app_id" content="444069062424919">
 
-    <!-- Google Tag Manager -->
-    <script src="./index_files/sdk.js.Без названия" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./index_files/sdk.js(1).Без названия"></script><script async="" src="./index_files/analytics.js.Без названия"></script><script async="" src="./index_files/gtm.js.Без названия"></script><script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WPHC3C5');</script>
-    <!-- End Google Tag Manager -->
+
 
 <script type="text/javascript" src="./index_files/jquery" async=""></script>
 <script type="text/javascript" src="./index_files/board" async=""></script>
@@ -392,74 +382,6 @@
         </div>
     </div>
 
-        
-
-    <script type="text/javascript" async="">
-        onLoadFuncs.push(function () {
-            setTimeout(function () {
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = "//connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-                    (document, 'script', 'facebook-jssdk'), 100);
-            }, 100);
-        });
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '444069062424919',
-                xfbml: true,
-                version: 'v2.3'
-            });
-        };
-
-        onLoadFuncs.push(function () {
-            $("#mainSearch").keydown(function (event) {
-                if (event.keyCode == 13) {
-                    this.form.submit();
-                    return false;
-                }
-            });
-
-            if ($("#divMainContent").height() < 1600) {
-                $(".Acontainer07").attr("style", "display:none;");
-            }
-            if ($("#divMainContent").height() < 1200) {
-                $(".Acontainer04").attr("style", "display:none;");
-            }
-            if ($("#divMainContent").height() < 800) {
-                $(".Acontainer01").attr("style", "display:none;");
-            }
-        });
-    </script>
-
-        <script type="text/javascript" async="">
-                onLoadFuncs.push(function ()
-                {
-                    setInterval(function ()
-                    {
-                        $("#cookieWarning").slideDown(600);
-                        $("#btnCookiesOk").click(function ()
-                        {
-                            $("#cookieWarning").slideUp(600, function ()
-                            {
-                                $("#cookieWarning").remove();
-                            });
-
-                            $.ajax({
-                                type: "POST",
-                                contentType: "application/json; charset=utf-8",
-                                url: 'https://#/ajaxservice.asmx/AcceptCookies',
-                                dataType: "json",
-                                async: true,
-                            });
-                        });
-                    }, 1000);
-                });
-        </script>
 
     <script type="text/javascript">
         onLoadFuncs.push(function () {
